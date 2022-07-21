@@ -7,16 +7,14 @@ int distinctelement(int arr[], int n){
     for (int i=0;i<n;i++){
         isdistinct=true;
         for (int j=i-1;j>=0;j--){
-            if(arr[i]=arr[j]){
+            if(arr[i]==arr[j]){
                 isdistinct=false;
                 break;
             }  
         }
-        if(isdistinct=true){
+        if(isdistinct==true){
             count++;
-            cout<< count;
-
-        }
+            }
     
     }
     return count;
